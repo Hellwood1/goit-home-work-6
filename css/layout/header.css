@@ -1,0 +1,120 @@
+/* Header */
+
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  padding: 24px 0;
+  position: relative;
+  color: var(--color-ocean);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list .linea {
+  color: var(--color-ocean);
+}
+
+.linea::after {
+  display: block;
+  width: 100%;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--color-ocean);
+  border-radius: 2px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-ocean);
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
+.logo-part-one {
+  display: inline-block;
+  color: var(--color-iris);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+
+.logo-part-two {
+  color: var(--color-navy-blue-modal);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.logo-part-two-footer {
+  color: var(--color-cloud);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Відступ між логотипом та параграфом */
+.logo-footer {
+  margin-bottom: 18px;
+}
+
+/* Links navigation */
+.nav-link {
+  color: var(--color-navy-blue);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-ocean);
+}
+
+.address {
+  font-style: normal;
+}
+
+.contacts {
+  color: var(--color-slate);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--color-ocean);
+}
+
+/* /HEADER SECTION */

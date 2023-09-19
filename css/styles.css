@@ -472,6 +472,7 @@ input {
   letter-spacing: 0.02em;
 }
 
+/* FOOTER */
 .footer {
   background-color: var(--color-grey);
   padding-top: 100px;
