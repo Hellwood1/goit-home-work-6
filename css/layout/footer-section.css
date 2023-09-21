@@ -14,6 +14,17 @@
   margin-right: 120px;
 }
 
+.logo-part-two-footer {
+  color: var(--color-cloud);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Відступ між логотипом та параграфом */
+/* .logo-footer {
+  margin-bottom: 18px;
+} */
+
 .footer-text {
   color: var(--color-cloud);
   line-height: 1.5;
