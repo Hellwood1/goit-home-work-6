@@ -1,35 +1,53 @@
 /* FOOTER */
 .footer {
   background-color: var(--color-grey);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 98px;
+  padding-bottom: 96px;
 }
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  text-align: center;
 }
 
 .footer-logo-container {
-  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 18px;
 }
 
-.logo-part-two-footer {
+.footer-logo-part-one {
+  display: inline-block;
+  color: var(--color-iris);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-logo-part-two {
   color: var(--color-cloud);
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.03em;
 }
 
-/* Відступ між логотипом та параграфом */
-/* .logo-footer {
-  margin-bottom: 18px;
-} */
-
 .footer-text {
-  color: var(--color-cloud);
+  width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  text-align: left;
+  color: var(--color-cloud);
+}
+
+.footer-social-media {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-media-text {
@@ -75,7 +93,12 @@
 
 /* FOOTER SUBSCRIBE FORM */
 .footer-form-subscribe {
-  margin-left: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-left: 80px; */
+  row-gap: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-form-text {
@@ -83,17 +106,19 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  margin-bottom: 16px;
   letter-spacing: 0.02em;
 }
 
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-subscribe-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
   border-radius: 4px;
   padding: 8px 16px;
@@ -137,3 +162,67 @@
   background-color: var(--color-ocean);
 }
 /* /FOOTER SUBSCRIBE FORM */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    text-align: left;
+  }
+
+  .footer-logo-container {
+    align-items: start;
+    margin-left: 108px;
+  }
+
+  .footer-form-subscribe {
+    flex-direction: column;
+    margin-left: 108px;
+    align-items: start;
+  }
+
+  .footer-form {
+    column-gap: 24px;
+  }
+
+  .footer-subscribe-input {
+    width: 264px;
+  }
+}
+/* /TABLET */
+
+/* DESCTOP */
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-logo-container {
+    margin-left: auto;
+    margin-right: 120px;
+    /* margin-right: auto; */
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    column-gap: 0px;
+  }
+
+  .footer-form-subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+/* /DESCTOP */
