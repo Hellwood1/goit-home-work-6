@@ -1,7 +1,6 @@
 /* MEMBERS SECTION */
 .team-section {
   background-color: var(--color-cloud);
-  /* max-height: 731px; */
   padding: 96px 0;
 }
 
@@ -19,8 +18,7 @@
 .team-list {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
-  /* text-align: center; */
+  row-gap: 72px;
   align-items: center;
 }
 
@@ -116,7 +114,6 @@
   .team-section {
     background-color: var(--color-cloud);
     flex-wrap: nowrap;
-    height: 732px;
     padding: 120px 0;
   }
 

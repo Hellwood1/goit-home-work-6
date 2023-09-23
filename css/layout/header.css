@@ -116,6 +116,7 @@
   flex-direction: column;
   row-gap: 24px;
   margin-bottom: 48px;
+  font-style: normal;
 }
 .mobile-addres-list-link {
   color: var(--color-slate);
@@ -253,7 +254,7 @@
 
   .contacts {
     font-size: 16px;
-    line-height: 1.5; /* 150% */
+    line-height: 1.5;
     letter-spacing: 0.02em;
   }
 
@@ -261,4 +262,3 @@
     color: var(--color-ocean);
   }
 }
-/* /HEADER SECTION */
