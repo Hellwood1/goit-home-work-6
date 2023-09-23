@@ -33,6 +33,8 @@ img {
 button {
   font-family: inherit;
   color: currentColor;
+  padding: 0;
+  line-height: 0;
 }
 
 input {
